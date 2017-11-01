@@ -11,6 +11,6 @@ class Stars //note that this class does NOT extend Floater
   	fill(255);
   	ellipse(x,y,2,2);
   }
-
+  
 
 }
