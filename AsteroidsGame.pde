@@ -6,18 +6,18 @@ public void setup(){
 	for(int b = 0; b < 250; b++){
 		b1[b] = new Stars();
 	}
-	Spaceship b2 = new Spaceship();
+	Spaceship test = new Spaceship();
 }
 public void draw(){
 	background(0);
 	for (int b = 0; b < 250; b++){
 		b1[b].show();
 	}
-	b2.show();
+	test.show();
 
 }
 public void keyType(){
 	if(key == 'e'){
-		b2.setDirectionX(0);
+		test.setDirectionX(0);
 	}
 }
