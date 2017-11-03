@@ -8,11 +8,12 @@ public void setup(){
 	}
 }
 public void draw(){
-	background(0);
+	background(255);
 	for (int b = 0; b < 250; b++){
 		b1[b].show();
 	}
 	test.show();
+	test.move();
 }
 public void keyType(){
 	if(key == 'e'){
