@@ -5,15 +5,14 @@ Spaceship test = new Spaceship();
 public void setup(){
 	size(500,500);
 	
-	for(int b = 0; b < 250; b++){
+	for(int b = 0; b < b1.length; b++){
 		b1[b] = new Stars();
 	}
 }
 public void draw(){
 	
-	background(240);
-	for (int b = 0; b < 250; b++){
-		fill(1);
+	background(0);
+	for (int b = 0; b < b1.length; b++){
 		b1[b].show();
 	}
 	test.show();
@@ -21,7 +20,7 @@ public void draw(){
 }
 public void keyTyped(){
 	if(key == 'e'){
-		test.turn(2);
+		test.turn(5);
 	}
 	if(key == 'a'){
 		test.move();
