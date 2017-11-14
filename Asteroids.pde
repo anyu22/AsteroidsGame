@@ -1,6 +1,7 @@
 public class Asteroids extends Floater{
 
 	public Asteroids () {
+        myColor = 165;
     	corners = 6;
     	xCorners = new int[corners];
     	yCorners = new int[corners];
@@ -9,7 +10,7 @@ public class Asteroids extends Floater{
     	xCorners[1]=4;
     	yCorners[1]=2;
     	xCorners[2]=-2;
-    	yCorners[2]=2;
+    	yCorners[2]=20;
     	xCorners[3]=-6;
     	yCorners[3]=0;
     	xCorners[4]=0;
@@ -18,8 +19,8 @@ public class Asteroids extends Floater{
     	yCorners[5]=2;
         myCenterX = 150;
         myCenterY = 150;
-        myDirectionX = 0;
-        myDirectionY = 0;		
+        myDirectionX = 5;
+        myDirectionY = 3;		
 	}
 	public void setX(int x){myCenterX = x;}
     public int getX(){return (int)myCenterX;}

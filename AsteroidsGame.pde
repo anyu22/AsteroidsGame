@@ -5,17 +5,24 @@ Spaceship test = new Spaceship();
 public void setup(){
 	size(500,500);
 	
-	for(int b = 0; b < b1.length; b++){
-		b1[b] = new Stars();
-		b2[b] = new Asteroids();
+	for(int x = 0; x < 248; x++){
+		b1[x] = new Stars();
+	}
+
+	for(int y = 0; y < 29; y++){
+		b2[y] = new Asteroids();
 	}
 }
 public void draw(){
 	
 	background(0);
-	for (int b = 0; b < b1.length; b++){
-		b1[b].show();
+	for (int x = 0; x < 245; x++){
+		b1[x].show();
 	}
+	for(int y = 0; y < 25 ; y++){
+		b2[y].show();
+		b2[y].move();
+	}	
 	test.show();
 	test.move();
 }
