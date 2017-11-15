@@ -1,7 +1,8 @@
 public class Asteroids extends Floater{
-
+    private int rotate;
 	public Asteroids () {
         myColor = 165;
+        rotate = 3;
     	corners = 6;
     	xCorners = new int[corners];
     	yCorners = new int[corners];
@@ -10,7 +11,7 @@ public class Asteroids extends Floater{
     	xCorners[1]=4;
     	yCorners[1]=2;
     	xCorners[2]=-2;
-    	yCorners[2]=20;
+    	yCorners[2]=2;
     	xCorners[3]=-6;
     	yCorners[3]=0;
     	xCorners[4]=0;

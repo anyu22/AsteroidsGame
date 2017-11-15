@@ -22,6 +22,7 @@ public void draw(){
 	for(int y = 0; y < 25 ; y++){
 		b2[y].show();
 		b2[y].move();
+		b2[y].turn(3);
 	}	
 	test.show();
 	test.move();
