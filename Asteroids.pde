@@ -18,10 +18,10 @@ public class Asteroids extends Floater{
     	yCorners[4]=4;
     	xCorners[5]=2;
     	yCorners[5]=2;
-        myCenterX = 150;
-        myCenterY = 150;
-        myDirectionX = 5;
-        myDirectionY = 3;		
+        myCenterX = ((Math.random()*512)+1);
+        myCenterY = ((Math.random()*512)+1);
+        myDirectionX = ((Math.random()*2)+1);
+        myDirectionY = ((Math.random()*2)+1);		
 	}
 	public void setX(int x){myCenterX = x;}
     public int getX(){return (int)myCenterX;}

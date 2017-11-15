@@ -2,14 +2,14 @@
 class Stars //note that this class does NOT extend Floater
 {
   //your code here
-  private int x,y;
+  private double x,y, colors;
   public Stars(){
-    x = ((int)Math.random()*512);
-    y = ((int)Math.random()*512);
+    x = ((Math.random()*512)+15);
+    y = ((Math.random()*512)+15);
   }
   public void show(){
-  	fill(255);
-  	ellipse(x,y,2,2);
+    fill(255);
+  	ellipse((float)x,(float)y,1,1);
   }
 
   
