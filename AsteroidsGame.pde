@@ -31,12 +31,12 @@ public void keyTyped(){
 	if(key == 'e'){
 		test.turn(5);
 	}
-	if(key == 'a'){
+	if(key == 'q'){
 		test.move();
 		test.accelerate(1);
 
 	}
-	if(key == 'd'){
+	if(key == 'r'){
 		test.setDirectionX(0);
 		test.setDirectionY(0);
 		test.setX((int)random(0,512));
